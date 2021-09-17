@@ -11,6 +11,10 @@ variable "node_role_ids" {
 
 variable "node_security_group" {}
 
+variable "storage_class_name" {
+  default = "efs-sc"
+}
+
 variable "subnet_ids" {
   type = set(string)
 }
